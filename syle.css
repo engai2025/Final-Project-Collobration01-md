@@ -111,3 +111,64 @@
     border-radius: 3px;
     transition: all 0.3s ease;
   }
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 999px) {
+    .cdn {
+      display: none;
+    }
+  
+    .navigation_bar {
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 100%;
+      background-color: #222;
+      flex-direction: column;
+      align-items: center;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      padding-bottom: 1rem;
+    }
+  
+    .navigation_bar.active {
+      transform: translateX(0);
+    }
+  
+    .navigation_bar .links {
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 1.5rem 0;
+    }
+  
+    .navigation_bar .cdn {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      margin-top: 1rem;
+    }
+  
+    .burger {
+      display: flex;
+    }
+    .menu {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .testimonial-container {
+      gap: 20px;
+    }
+  
+    .testimonial-box {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
